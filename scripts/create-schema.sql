@@ -45,6 +45,7 @@ CREATE TABLE IF NOT EXISTS `oficina`.`veiculo` (
   PRIMARY KEY (`placa`),
   UNIQUE INDEX `renavan_UNIQUE` (`renavan` ASC) VISIBLE)
 ENGINE = InnoDB;
+ALTER TABLE veiculo MODIFY ano SMALLINT NULL;
 
 
 -- -----------------------------------------------------
